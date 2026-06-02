@@ -37,33 +37,9 @@ src/
 ├── pages/
 ├── App.tsx
 └── main.tsx
-```
 
-## 💻 Como Executar o Projeto
 
-Clone o repositório:
 
-```bash
-git clone URL_DO_REPOSITORIO
-```
-
-Entre na pasta:
-
-```bash
-cd nome-do-projeto
-```
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Execute o projeto:
-
-```bash
-npm run dev
-```
 
 ## 🎯 Objetivo
 
