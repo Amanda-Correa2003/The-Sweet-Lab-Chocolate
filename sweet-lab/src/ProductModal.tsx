@@ -1,5 +1,4 @@
-import type { Product } from "@/types/Product";
-import { useCart } from "@/CartContext";
+import {Product} from "../types/Product"
 
 interface ProductModalProps {
   product: Product | null;
@@ -36,8 +35,8 @@ export default function ProductModal({ product, onClose, onAddToCart }: ProductM
           
           <h2 className="text-2xl font-bold text-gray-800 mt-2">{product.name}</h2>
           
-          <p className="text-sm text-gray-500 mt-2">
-            <span className="font-semibold text-gray-700">Ingredientes:</span> {product.ingredients}
+          <p className="text-sm text-gray-800 mt-2">
+            <span className="font-semibold text-gray-800">Ingredientes:</span> {product.ingredients}
           </p>
 
           <div className="flex items-center justify-between mt-6">
@@ -50,7 +49,7 @@ export default function ProductModal({ product, onClose, onAddToCart }: ProductM
   onAddToCart(product);
   onClose();
 }}
-              className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2.5 rounded-xl transition-all"
+              className="bg-amber-600 hover:bg-amber-700 text-brown font-semibold px-5 py-2.5 rounded-xl transition-all"
             >
               Adicionar ao Carrinho
             </button>

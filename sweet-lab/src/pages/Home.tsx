@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { products } from "../data/Products";
 
+
+
+
+
+
+
+
 interface HomeProps {
   onIrParaCheckout: () => void;
 }
@@ -9,6 +16,7 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
 const [search, setSearch] = useState("");
 const [category, setCategory] = useState("Todos");
 const [sortBy, setSortBy] = useState("default");
+
 
 let filteredProducts = [...products];
 
@@ -52,16 +60,38 @@ switch (sortBy) {
         padding: "40px"
       }}
     >
-      <h1
+
+<div style={{ textAlign: "right", marginBottom: "20px" }}>
+        <button 
+          onClick={onIrParaCheckout}
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "#3D2B1F",
+            color: "#B08D57",
+            border: "#B08D57",
+            borderRadius: "8px",
+            cursor: "pointer",
+            fontWeight: "bold"
+          
+          }}
+        >
+          Ver Carrinho 🛒
+        </button>
+      </div>
+
+      <h1 className= "titulo da loja">
+        <p
         style={{
           textAlign: "center",
           color: "#3D2B1F",
-          fontSize: "3rem"
+          marginBottom: "40px",
+          fontSize:"clamp(1.5rem, 5vw,3rem)"
         }}
       >
         The Sweet Lab Chocolate
-      </h1>
-
+      </p>
+        
+        </h1>
       <p
         style={{
           textAlign: "center",
@@ -71,23 +101,6 @@ switch (sortBy) {
       >
         Sabores artesanais para momentos especiais.
       </p>
-
-<div style={{ textAlign: "center", marginBottom: "20px" }}>
-        <button 
-          onClick={onIrParaCheckout}
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#3D2B1F",
-            color: "beige",
-            border: "none",
-            borderRadius: "8px",
-            cursor: "pointer",
-            fontWeight: "bold"
-          }}
-        >
-          Ver Carrinho 🛒
-        </button>
-      </div>
 
 
       <div
@@ -162,6 +175,7 @@ switch (sortBy) {
   </select>
 
 </div>
+
 
       <div
         style={{
