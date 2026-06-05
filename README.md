@@ -27,6 +27,11 @@ O objetivo do projeto é servir como portfólio de desenvolvimento Front-end e d
 - CSS
 - HTML5
 
+🖼️​ Imagens
+
+<img width="2048" height="5078" alt="localhost_5173_(iPad Pro)" src="https://github.com/user-attachments/assets/30dd9804-4010-494c-9271-b01a3d00effc" />
+
+
 ## 📂 Estrutura do Projeto
 
 ```text
@@ -37,8 +42,6 @@ src/
 ├── pages/
 ├── App.tsx
 └── main.tsx
-
-
 
 
 ## 🎯 Objetivo
