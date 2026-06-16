@@ -29,7 +29,10 @@ O objetivo do projeto é servir como portfólio de desenvolvimento Front-end e d
 
 🖼️​ Imagens
 
-<img width="2048" height="5078" alt="localhost_5173_(iPad Pro)" src="https://github.com/user-attachments/assets/30dd9804-4010-494c-9271-b01a3d00effc" />
+<img width="2048" height="5078" alt="localhost_5173_(Nest Hub)" src="https://github.com/user-attachments/assets/8a7f5e46-b4d4-4af8-9d03-6fc86b1ff215" />
+
+
+
 
 
 ## 📂 Estrutura do Projeto
