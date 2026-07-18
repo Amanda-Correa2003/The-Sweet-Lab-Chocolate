@@ -27,7 +27,7 @@ export default function Checkout({ onBack }: CheckoutProps) {
       return;
     }
 
-    const numeroWhats = "5521999999999"; // Depois você altera para o seu número real
+    const numeroWhats = "5521964239143"; // Depois você altera para o número real
     let itensTexto = "";
     cart.forEach((item) => {
       itensTexto += `• *${item.quantity}x* ${item.name}\n`;
@@ -43,19 +43,19 @@ export default function Checkout({ onBack }: CheckoutProps) {
   };
 
   return (
-    <div className="p-6 bg-white rounded-xl max-w-lg mx-auto mt-10 shadow-md" style={{ backgroundColor: "#fff", padding: "20px", borderRadius: "12px" }}>
+    <div className="p-6 bg-white rounded-xl max-w-lg mx-auto mt-10 shadow-md" style={{ backgroundColor: "#9E2B3C", padding: "20px", borderRadius: "12px" }}>
       <button onClick={onBack} style={{ color: "#3D2B1F", fontWeight: "bold", background: "none", border: "none", cursor: "pointer", marginBottom: "15px" }}>
         ← Voltar para a Vitrine
       </button>
       <h2 style={{ color: "#3D2B1F", marginBottom: "15px" }}>Finalizar Pedido</h2>
       
       <form onSubmit={handleFinalizarPedido} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <input required type="text" name="nome" placeholder="Seu Nome" value={formData.nome} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #ccc" }} />
-        <input required type="text" name="cep" placeholder="CEP" value={formData.cep} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #ccc" }} />
-        <input required type="text" name="cidade" placeholder="Cidade" value={formData.cidade} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #ccc" }} />
-        <input required type="text" name="rua" placeholder="Rua" value={formData.rua} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #ccc" }} />
-        <input required type="text" name="numero" placeholder="Número" value={formData.numero} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #ccc" }} />
-        <input type="text" name="complemento" placeholder="Complemento (Opcional)" value={formData.complemento} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #ccc" }} />
+        <input required type="text" name="nome" placeholder="Seu Nome" value={formData.nome} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #3D2B1F" , backgroundColor:"#6b5c29" }} />
+        <input required type="text" name="cep" placeholder="CEP" value={formData.cep} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #3D2B1F", backgroundColor:"#6d5d29" }} />
+        <input required type="text" name="cidade" placeholder="Cidade" value={formData.cidade} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #3D2B1F" , backgroundColor:"#6d5d29" }} />
+        <input required type="text" name="rua" placeholder="Rua" value={formData.rua} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #3D2B1F " , backgroundColor:"#6d5d29" }} />
+        <input required type="text" name="numero" placeholder="Número" value={formData.numero} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #3D2B1F" , backgroundColor:"#6d5d29" }} />
+        <input type="text" name="complemento" placeholder="Complemento (Opcional)" value={formData.complemento} onChange={handleChange} style={{ padding: "8px", borderRadius: "6px", border: "1px solid #3D2B1F" , backgroundColor:"#6d5d29" }} />
         
         <button type="submit" style={{ backgroundColor: "#3D2B1F", color: "beige", fontWeight: "bold", padding: "12px", border: "none", borderRadius: "8px", cursor: "pointer", marginTop: "10px" }}>
           Enviar Pedido via WhatsApp 🚀
