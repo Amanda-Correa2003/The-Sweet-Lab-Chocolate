@@ -29,9 +29,10 @@ O objetivo do projeto é servir como portfólio de desenvolvimento Front-end e d
 
 🖼️​ Imagens
 
-<img width="2048" height="3752" alt="localhost_5173_(Nest Hub) (2)" src="https://github.com/user-attachments/assets/7bbb2acd-8978-4b4e-9ed9-443e9efee1ad" />
+<img width="2560" height="3984" alt="localhost_5173_(Nest Hub Max) (1)" src="https://github.com/user-attachments/assets/60f8518e-ad5f-4966-8221-2d4d9d9ee69c" />
 
-<img width="2048" height="1200" alt="localhost_5173_(Nest Hub) (1)" src="https://github.com/user-attachments/assets/922466ee-6a3d-40e8-98c6-8342be04a59d" />
+<img width="2560" height="1600" alt="localhost_5173_(Nest Hub Max) (2)" src="https://github.com/user-attachments/assets/0a7993ae-7f1d-4c3d-a513-33feff404e1c" />
+
 
 
 
