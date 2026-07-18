@@ -1,55 +1,92 @@
-# 🍫 Doceria Artesanal
+# 🍫 The Sweet Lab Chocolate
 
-Projeto desenvolvido com React e TypeScript para simular o catálogo digital de uma doceria artesanal.
+Uma vitrine virtual para uma doceria artesanal desenvolvida com React, TypeScript e Vite.
 
-## 📖 Sobre o Projeto
+Loja online onde o usuário pode pesquisar produtos, filtrá-los por categoria, ordenar a vitrine, adicionar itens ao carrinho e finalizar um pedido através do WhatsApp.
 
-A aplicação permite que os clientes visualizem os produtos da doceria de forma simples e organizada, oferecendo uma experiência moderna e responsiva.
 
-O objetivo do projeto é servir como portfólio de desenvolvimento Front-end e demonstrar conhecimentos em React, TypeScript e construção de interfaces responsivas.
-
-## ✨ Funcionalidades
-
-- Listagem de produtos
-- Busca por nome
-- Filtro por categorias
-- Ordenação de produtos
-- Interface responsiva
-- Cards de produtos
-- Identidade visual personalizada
-- Catálogo digital para pequenos negócios
-
-## 🛠️ Tecnologias Utilizadas
+## 🚀 Tecnologias
 
 - React
 - TypeScript
 - Vite
 - CSS
-- HTML5
+- Context API
+- Git e GitHub
+
+
+## ✨ Funcionalidades
+
+- Catálogo de produtos
+- Pesquisa por nome
+- Filtro por categoria
+- Ordenação por:
+  - Menor preço
+  - Maior preço
+  - Mais vendidos
+  - Ordem alfabética
+- Carrinho de compras utilizando Context API
+- Atualização automática da quantidade de itens
+- Cálculo automático do valor total
+- Checkout
+- Envio do pedido para o WhatsApp
+
+
+## 📚 Conceitos praticados
+
+Durante o desenvolvimento deste projeto foram utilizados conceitos importantes do React, como:
+
+- Componentização
+- Props
+- Hooks (`useState` e `useContext`)
+- Context API para gerenciamento global de estado
+- Listagem dinâmica com `map`
+- Filtragem de dados
+- Ordenação de arrays
+- Organização de arquivos por responsabilidade
+- Tipagem com TypeScript
+- 
+
+## ▶️ Como executar o projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Amanda-Correa2003/The-Sweet-Lab-Chocolate.git
+```
+
+Entre na pasta:
+
+```bash
+cd The-Sweet-Lab-Chocolate
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+
+## 📌 Próximas melhorias
+
+- Exibir os itens do carrinho durante o checkout
+- Persistência do carrinho com Local Storage
+- Consumo de API para os produtos
+- Painel administrativo
+- Integração com backend
+- Melhorias de acessibilidade
 
 🖼️​ Imagens
 
 <img width="2560" height="3984" alt="localhost_5173_(Nest Hub Max) (1)" src="https://github.com/user-attachments/assets/60f8518e-ad5f-4966-8221-2d4d9d9ee69c" />
 
-<img width="2560" height="1600" alt="localhost_5173_(Nest Hub Max) (2)" src="https://github.com/user-attachments/assets/0a7993ae-7f1d-4c3d-a513-33feff404e1c" />
+<img width="2560" height="1600" alt="localhost_5173_(Nest Hub Max) (2)" src="https://github.com/user-attachments/assets/0a7993ae-7f1d-4c3d-a513-33feff404e1c" /> 
 
-
-
-
-
-## 📂 Estrutura do Projeto
-
-```text
-src/
-├── assets/
-├── components/
-├── data/
-├── pages/
-├── App.tsx
-└── main.tsx
-
-
-## 🎯 Objetivo
-
-Este projeto foi criado para praticar conceitos de desenvolvimento Front-end e simular uma solução que poderia ser utilizada por docerias, cafeterias e pequenos negócios para apresentação e organização de seus produtos.
 
