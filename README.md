@@ -85,8 +85,10 @@ npm run dev
 
 🖼️​ Imagens
 
-<img width="2560" height="3984" alt="localhost_5173_(Nest Hub Max) (1)" src="https://github.com/user-attachments/assets/60f8518e-ad5f-4966-8221-2d4d9d9ee69c" />
+<img width="2730" height="3606" alt="localhost_5173_(Nest Hub) (18)" src="https://github.com/user-attachments/assets/68628944-e88e-454c-b391-c6c94c36db57" />
 
-<img width="2560" height="1600" alt="localhost_5173_(Nest Hub Max) (2)" src="https://github.com/user-attachments/assets/0a7993ae-7f1d-4c3d-a513-33feff404e1c" /> 
+<img width="2048" height="1908" alt="localhost_5173_(Nest Hub) (19)" src="https://github.com/user-attachments/assets/530fbac2-3247-4961-9186-f748283b4b9c" />
+
+
 
 
