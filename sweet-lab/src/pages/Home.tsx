@@ -56,9 +56,9 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
   return (
     <div
       style={{
-        minHeight: "100vh",
+        minHeight: "120vh",
         backgroundColor: "#591F24",
-        padding: "20px 40px 40px 40px",
+        padding: "20px 40px 40px 10px",
         fontFamily: "sans-serif",
       }}
     >
@@ -71,7 +71,7 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
           position: "relative",
           marginBottom: "30px",
           overflow: "hidden",
-          boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+          boxShadow: "0 8px 24px rgb(168, 35, 35)",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
