@@ -8,5 +8,5 @@ export interface Product {
   sales: number;
   launchDate: string;
   image: string;
-  
+  quantity?: number;
 }
