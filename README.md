@@ -115,11 +115,3 @@ mobile
 
 
 
-desktop
-<img width="2048" height="4354" alt="localhost_5173_(Nest Hub) (21)" src="https://github.com/user-attachments/assets/ed106162-248a-4372-8caa-d13673adeb05" />
-
-<img width="2730" height="1948" alt="localhost_5173_(Nest Hub) (22)" src="https://github.com/user-attachments/assets/189f1818-dfe0-4626-baab-b183b238c103" />
-
-
-
-
