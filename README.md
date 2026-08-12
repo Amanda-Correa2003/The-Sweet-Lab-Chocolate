@@ -85,12 +85,16 @@ npm run dev
 
 🖼️​ Imagens
 
-
+home no mobile
 <img width="750" height="5392" alt="localhost_5173_(iPhone SE) (1)" src="https://github.com/user-attachments/assets/77e6972a-c153-4822-a4b8-1b1fd96ef199" />
 
+home no tablet
 <img width="1536" height="4354" alt="localhost_5173_(iPad Mini)" src="https://github.com/user-attachments/assets/e88ad64f-56d6-4dcb-8888-06de5f751bff" />
 
+carrinho tablet
 <img width="750" height="2024" alt="localhost_5173_(iPhone SE) (2)" src="https://github.com/user-attachments/assets/d9d31996-6e42-45e9-bf9d-496233361f50" />
+
+
 
 
 
