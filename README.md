@@ -85,23 +85,11 @@ npm run dev
 
 🖼️​ Imagens
 
-mobile:
-<img width="750" height="5392" alt="localhost_5173_(iPhone SE) (1)" src="https://github.com/user-attachments/assets/0ac49919-f5c3-4ea7-8081-250584f4b498" />
-
-<img width="750" height="2024" alt="localhost_5173_(iPhone SE) (2)" src="https://github.com/user-attachments/assets/6670ecdf-f43d-4bf8-a8b7-82937d85198a" />
-
-<img width="309" height="276" alt="image" src="https://github.com/user-attachments/assets/f0d3591a-24ec-42d8-b118-23df6b9c65ec" />
-
-tablet:
 <img width="1536" height="4354" alt="localhost_5173_(iPad Mini)" src="https://github.com/user-attachments/assets/6b9306ef-01c8-424c-99dd-b15de926dedf" />
 
 <img width="1536" height="2208" alt="localhost_5173_(iPad Mini) (1)" src="https://github.com/user-attachments/assets/db95ab8d-0e7c-4356-901b-c442c2ec5fa4" />
 
-desktop:
 
-<img width="2048" height="4354" alt="localhost_5173_(Nest Hub) (21)" src="https://github.com/user-attachments/assets/aafbd7e8-515f-4663-a596-1e3933358c27" />
-
-<img width="2730" height="1948" alt="localhost_5173_(Nest Hub) (22)" src="https://github.com/user-attachments/assets/f3be51a6-aa48-4a6f-84eb-2d0103d9d5c8" />
 
 
 
