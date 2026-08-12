@@ -58,8 +58,11 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
       style={{
         minHeight: "120vh",
         backgroundColor: "#591F24",
-        padding: "20px 40px 40px 10px",
+        padding: "20px 40px 40px 24px",
         fontFamily: "sans-serif",
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       {/* Banner / Hero Principal */}
@@ -83,14 +86,14 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
           <button
             onClick={onIrParaCheckout}
             style={{
-              padding: "8px 18px",
+              padding: "8px 16px",
               backgroundColor: "#FFF8EE",
               color: "#3D2B1F",
               border: "1px solid #D4B595",
               borderRadius: "20px",
               cursor: "pointer",
               fontWeight: "600",
-              fontSize: "14px",
+              fontSize: "12px",
               boxShadow: "0 2px 6px rgba(0,0,0,0.08)",
               display: "flex",
                
@@ -338,9 +341,9 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
       </div>
 
       {/* Botão Ver Mais */}
-      {!mostrarTodos && filteredProducts.length > 9 && (
+      {!mostrarTodos && filteredProducts.length > 8  && (
         <div style={{ textAlign: "center", marginTop: "35px" }}>
-          <button
+          <button 
             onClick={() => setMostrarTodos(true)}
             style={{
               backgroundColor: "#3D2B1F",
