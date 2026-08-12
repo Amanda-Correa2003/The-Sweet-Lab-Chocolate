@@ -85,34 +85,39 @@ npm run dev
 
 🖼️​ Imagens
 
-home no mobile
-<img width="750" height="5392" alt="localhost_5173_(iPhone SE) (1)" src="https://github.com/user-attachments/assets/77e6972a-c153-4822-a4b8-1b1fd96ef199" />
-
-
-carrinho no mobile
-<img width="750" height="2024" alt="localhost_5173_(iPhone SE) (2)" src="https://github.com/user-attachments/assets/f3351ec9-c0a5-4a0f-9ee6-361af2eeabb0" />
+mobile
+<img width="874" height="2340" alt="Screenshot_20260812_012414_Gallery" src="https://github.com/user-attachments/assets/ffc01fff-5d6d-41ff-99c6-29ec61713f4a" />
+<img width="750" height="2024" alt="634599161-f3351ec9-c0a5-4a0f-9ee6-361af2eeabb0" src="https://github.com/user-attachments/assets/74e4c493-041a-438c-96c1-7893514747c2" />
 
 
 
 
 
-home no tablet
-<img width="1536" height="4354" alt="localhost_5173_(iPad Mini)" src="https://github.com/user-attachments/assets/e88ad64f-56d6-4dcb-8888-06de5f751bff" />
-
-
-
-carrinho tablet
-<img width="750" height="2024" alt="localhost_5173_(iPhone SE) (2)" src="https://github.com/user-attachments/assets/d9d31996-6e42-45e9-bf9d-496233361f50" />
 
 
 
 
 
-home no desktop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+desktop
 <img width="2048" height="4354" alt="localhost_5173_(Nest Hub) (21)" src="https://github.com/user-attachments/assets/ed106162-248a-4372-8caa-d13673adeb05" />
 
-
-carrinho no desktop
 <img width="2730" height="1948" alt="localhost_5173_(Nest Hub) (22)" src="https://github.com/user-attachments/assets/189f1818-dfe0-4626-baab-b183b238c103" />
 
 
