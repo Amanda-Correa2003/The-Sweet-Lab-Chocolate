@@ -87,8 +87,8 @@ npm run dev
 
 <img width="1536" height="4354" alt="localhost_5173_(iPad Mini)" src="https://github.com/user-attachments/assets/6b9306ef-01c8-424c-99dd-b15de926dedf" />
 
-<img width="1536" height="2208" alt="localhost_5173_(iPad Mini) (1)" src="https://github.com/user-attachments/assets/db95ab8d-0e7c-4356-901b-c442c2ec5fa4" />
 
+<img width="750" height="2024" alt="localhost_5173_(iPhone SE) (2)" src="https://github.com/user-attachments/assets/d9d31996-6e42-45e9-bf9d-496233361f50" />
 
 
 
