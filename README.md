@@ -62,7 +62,7 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 
  * Abra o navegador no endereço exibido no terminal (geralmente http://localhost:5173).
    
-🎯 Desafios Técnicos & Aprendizados
+🎯 Desafios Técnicos e Aprendizados
 
 1-Refatoração de Estruturas: Organização modular de componentes em subpastas (home e checkout) para desacoplar responsabilidades e manutenibilidade a longo prazo.
 
