@@ -5,33 +5,49 @@ Uma aplicação web moderna de e-commerce e catálogo interativo desenvolvida pa
 🚀 Tecnologias Utilizadas
 
 React (com TypeScript) – Tipagem estática e componentização escalável.
+
 Vite – Empacotador de alta performance para desenvolvimento ágil.
+
 Context API – Gerenciamento de estado global para o carrinho de compras.
+
 CSS / Estilização Inline e Modular – Design responsivo e refinado.
 
 
 💡 Principais Funcionalidades
 
 Catálogo Dinâmico & Filtros Avançados: Busca em tempo real por nome do produto, filtros por categoria artesanal e ordenação inteligente (menor preço, maior preço, mais vendidos e alfabética).
+
 Responsividade Inteligente (Mobile-First): Ajuste dinâmico da grade de produtos (exibição otimizada de 6 itens em dispositivos móveis e 9 em desktops) para evitar o cansaço de rolagem excessiva (infinite scroll / show more nativo).
+
 Carrinho de Compras Global: Gerenciamento integrado de adição, remoção e persistência de itens através da Context API do React.
+
 Fluxo de Checkout Dedicado: Área de pagamento estruturada para conversão, oferecendo etapas claras e experiência fluida de compra.
 
 📂 Arquitetura do Projeto
+
 src/
 ├── assets/          # Recursos visuais e imagens da marca
+
 ├── components/      # Componentes reutilizáveis divididos por domínio
+
 │   ├── checkout/    # Componentes do fluxo de pagamento
+
 │   └── home/        # Componentes do catálogo, filtros, cards e rodapé
+
 ├── data/            # Mock de dados e tipagens de produtos
+
 ├── pages/           # Páginas principais (Home e Checkout)
+
 ├── CartContext.tsx  # Contexto global do carrinho de compras
+
 ├── App.tsx          # Roteamento e orquestração principal da aplicação
+
 └── main.tsx         # Ponto de entrada da aplicação React
 
 🛠️ Como Executar o Projeto Localmente?
 
 Certifique-se de ter o Node.js instalado em sua máquina.
+
  * Clone o repositório:
    git clone <url-do-repositorio>
 
@@ -47,8 +63,11 @@ Certifique-se de ter o Node.js instalado em sua máquina.
  * Abra o navegador no endereço exibido no terminal (geralmente http://localhost:5173).
    
 🎯 Desafios Técnicos & Aprendizados
+
 1-Refatoração de Estruturas: Organização modular de componentes em subpastas (home e checkout) para desacoplar responsabilidades e manutenibilidade a longo prazo.
+
 2-Tratamento de Tipagem com TypeScript: Garantia de tipagens estritas em contextos globais e manipulação de arrays de produtos para evitar erros em tempo de execução.
+
 3-Otimização de Performance: Utilização de useMemo para filtragem e ordenação eficiente de listas de produtos sem gargalos de renderização.
  
 
