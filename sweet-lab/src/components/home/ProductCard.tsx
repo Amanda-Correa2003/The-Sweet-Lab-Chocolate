@@ -1,4 +1,4 @@
-import { products } from "../data/Products";
+import { products } from "../../data/Products";
 
 type Product = typeof products[number];
 

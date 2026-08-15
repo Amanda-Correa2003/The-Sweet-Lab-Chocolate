@@ -1,11 +1,11 @@
 import { useState, useMemo, useEffect } from "react";
 import { products } from "../data/Products";
 import { useCart } from "../CartContext";
-import Footer from "../components/Footer";
-import HomeHero from "../components/HomeHero";
-import ProductFilters from "../components/ProductFilters";
-import ProductGrid from "../components/ProductGrid";
-import ShowMoreButton from "../components/ShowMoreButton";
+import Footer from "../components/home/Footer";
+import HomeHero from "../components/home/HomeHero";
+import ProductFilters from "../components/home/ProductFilters";
+import ProductGrid from "../components/home/ProductGrid";
+import ShowMoreButton from "../components/home/ShowMoreButton";
 
 interface HomeProps {
   onIrParaCheckout: () => void;
