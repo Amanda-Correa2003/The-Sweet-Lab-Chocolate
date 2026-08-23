@@ -18,6 +18,7 @@ O que rola na aplicação?
 Estrutura das Pastas
 
 src/
+
 ├── assets/          # Imagens e recursos visuais
 
 ├── components/      # Componentes separados por seção
