@@ -19,20 +19,33 @@ Estrutura das Pastas
 
 src/
 ├── assets/          # Imagens e recursos visuais
+
 ├── components/      # Componentes separados por seção
+
 │   ├── checkout/    # Telas de pagamento
+
 │   └── home/        # Catálogo, filtros, cards, etc.
+
 ├── data/            # Dados mockados e types
+
 ├── pages/           # Home e Checkout
+
 ├── CartContext.tsx  # Estado global do carrinho
+
 ├── App.tsx          # Rotas e estrutura
+
 └── main.tsx         # Start do React
 
 Como rodar localmente?
+
 Basta ter o Node.js instalado e mandar bala no terminal:
+
 git clone <url-do-repositorio>
+
 cd sweet-lab
+
 npm install
+
 npm run dev
 
 Depois é só abrir o link que aparecer no terminal (geralmente http://localhost:5173).
