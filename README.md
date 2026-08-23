@@ -1,74 +1,42 @@
-Sweet Lab Chocolate 🍫✨
+The Sweet Lab Chocolate 🍫
 
-Uma aplicação web moderna de e-commerce e catálogo interativo desenvolvida para uma marca artesanal de chocolates finos (The Sweet Lab Chocolate). O projeto foi construído com foco em experiência do usuário (UX), responsividade mobile-first e boas práticas de engenharia frontend.
+Projeto de e-commerce e catálogo interativo que desenvolvi para uma marca artesanal de chocolates finos. A ideia principal era criar uma experiência de compra leve, bonita e redondinha, caprichando bastante na responsividade mobile e nas boas práticas de código.
 
-🚀 Tecnologias Utilizadas
+Tecnologias
 
-React (com TypeScript) – Tipagem estática e componentização escalável.
+ * React + TypeScript
+ * Vite
+ * Context API (para o carrinho)
+ * CSS / Estilização Modular
+O que rola na aplicação?
+ * Catálogo & Filtros: Busca em tempo real, filtros por categoria e ordenação por preço, favoritos/mais vendidos e ordem alfabética.
+ * Responsividade: Grade de produtos pensada para rodar liso no celular e no desktop, evitando aquela rolagem infinita e cansativa.
+ * Carrinho Global: Adiciona, remove e segura os itens usando o Context do React.
+ * Checkout: Fluxo de pagamento direto ao ponto, sem enrolação.
 
-Vite – Empacotador de alta performance para desenvolvimento ágil.
-
-Context API – Gerenciamento de estado global para o carrinho de compras.
-
-CSS / Estilização Inline e Modular – Design responsivo e refinado.
-
-
-💡 Principais Funcionalidades
-
-Catálogo Dinâmico & Filtros Avançados: Busca em tempo real por nome do produto, filtros por categoria artesanal e ordenação inteligente (menor preço, maior preço, mais vendidos e alfabética).
-
-Responsividade Inteligente (Mobile-First): Ajuste dinâmico da grade de produtos (exibição otimizada de 6 itens em dispositivos móveis e 9 em desktops) para evitar o cansaço de rolagem excessiva (infinite scroll / show more nativo).
-
-Carrinho de Compras Global: Gerenciamento integrado de adição, remoção e persistência de itens através da Context API do React.
-
-Fluxo de Checkout Dedicado: Área de pagamento estruturada para conversão, oferecendo etapas claras e experiência fluida de compra.
-
-📂 Arquitetura do Projeto
+   
+Estrutura das Pastas
 
 src/
-├── assets/          # Recursos visuais e imagens da marca
+├── assets/          # Imagens e recursos visuais
+├── components/      # Componentes separados por seção
+│   ├── checkout/    # Telas de pagamento
+│   └── home/        # Catálogo, filtros, cards, etc.
+├── data/            # Dados mockados e types
+├── pages/           # Home e Checkout
+├── CartContext.tsx  # Estado global do carrinho
+├── App.tsx          # Rotas e estrutura
+└── main.tsx         # Start do React
 
-├── components/      # Componentes reutilizáveis divididos por domínio
+Como rodar localmente?
+Basta ter o Node.js instalado e mandar bala no terminal:
+git clone <url-do-repositorio>
+cd sweet-lab
+npm install
+npm run dev
 
-│   ├── checkout/    # Componentes do fluxo de pagamento
+Depois é só abrir o link que aparecer no terminal (geralmente http://localhost:5173).
 
-│   └── home/        # Componentes do catálogo, filtros, cards e rodapé
-
-├── data/            # Mock de dados e tipagens de produtos
-
-├── pages/           # Páginas principais (Home e Checkout)
-
-├── CartContext.tsx  # Contexto global do carrinho de compras
-
-├── App.tsx          # Roteamento e orquestração principal da aplicação
-
-└── main.tsx         # Ponto de entrada da aplicação React
-
-🛠️ Como Executar o Projeto Localmente?
-
-Certifique-se de ter o Node.js instalado em sua máquina.
-
- * Clone o repositório:
-   git clone <url-do-repositorio>
-
- * Acesse a pasta do projeto:
-   cd sweet-lab
-
- * Instale as dependências:
-   npm install
-
- * Inicie o servidor de desenvolvimento:
-   npm run dev
-
- * Abra o navegador no endereço exibido no terminal (geralmente http://localhost:5173).
-   
-🎯 Desafios Técnicos e Aprendizados
-
-1-Refatoração de Estruturas: Organização modular de componentes em subpastas (home e checkout) para desacoplar responsabilidades e manutenibilidade a longo prazo.
-
-2-Tratamento de Tipagem com TypeScript: Garantia de tipagens estritas em contextos globais e manipulação de arrays de produtos para evitar erros em tempo de execução.
-
-3-Otimização de Performance: Utilização de useMemo para filtragem e ordenação eficiente de listas de produtos sem gargalos de renderização.
  
 
 🖼️​ Imagens
