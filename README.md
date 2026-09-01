@@ -51,7 +51,7 @@ npm run dev
 
 Depois é só abrir o link que aparecer no terminal (geralmente http://localhost:5173).
 
- 
+
 
 🖼️​ Imagens
 
