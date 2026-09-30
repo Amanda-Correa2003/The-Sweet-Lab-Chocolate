@@ -3,6 +3,8 @@ The Sweet Lab Chocolate 🍫
 
 Projeto de e-commerce e catálogo interativo que desenvolvi para uma marca artesanal de chocolates finos. A ideia principal era criar uma experiência de compra leve, bonita e redondinha, caprichando bastante na responsividade mobile e nas boas práticas de código.
 
+demo: https://the-sweet-lab-chocolatee.vercel.app/
+
 Tecnologias
 
  * React + TypeScript
