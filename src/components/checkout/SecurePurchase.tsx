@@ -1,55 +1,44 @@
+import { ShieldCheck, Heart } from "lucide-react";
+
 export default function SecurePurchase() {
   return (
     <div
       style={{
         marginTop: "20px",
-        backgroundColor: "#F9EFE3",
-        border: "1px solid #EAD8C3",
-        borderRadius: "10px",
-        padding: "15px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        gap: "14px",
+        backgroundColor: "#F8EDE0",
+        border: "1px solid #E8DCC8",
+        borderRadius: "12px",
+        padding: "16px",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-        <div
-          style={{
-            width: "36px",
-            height: "36px",
-            backgroundColor: "#EBD8C3",
-            borderRadius: "50%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: "16px",
-          }}
-        >
-          🛡️
+      <div
+        style={{
+          width: "40px",
+          height: "40px",
+          borderRadius: "50%",
+          backgroundColor: "#EAD9C3",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexShrink: 0,
+        }}
+      >
+        <ShieldCheck size={20} color="#591F24" strokeWidth={2} />
+      </div>
+
+      <div style={{ flex: 1, textAlign: "center" }}>
+        <div style={{ fontWeight: "bold", fontSize: "14px", color: "#2B1215" }}>
+          Compra 100% segura
         </div>
-        <div>
-          <p
-            style={{
-              margin: "0 0 2px 0",
-              fontWeight: "bold",
-              color: "#3D2B1F",
-              fontSize: "13px",
-            }}
-          >
-            Compra 100% segura
-          </p>
-          <p
-            style={{
-              margin: "0",
-              color: "#7A6558",
-              fontSize: "11px",
-            }}
-          >
-            Seus dados estão protegidos e seu pedido será enviado com todo carinho.
-          </p>
+        <div style={{ fontSize: "11px", color: "#6B4A4E", marginTop: "4px" }}>
+          Seus dados estão protegidos e seu pedido será enviado com todo carinho.
         </div>
       </div>
-      <div style={{ color: "#E08383", fontSize: "20px" }}>♥</div>
+
+      <Heart size={18} color="#D98088" fill="#D98088" />
     </div>
   );
 }
