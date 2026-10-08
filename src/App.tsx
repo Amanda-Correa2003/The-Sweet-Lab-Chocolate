@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import {react, useState} from "react"
 import { CartProvider } from "./CartContext";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
