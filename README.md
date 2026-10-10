@@ -60,7 +60,7 @@ Depois é só abrir o link que aparecer no terminal (geralmente http://localhost
 
 desktop
 <img width="2560" height="3658" alt="localhost_5173_(Nest Hub Max) (21)" src="https://github.com/user-attachments/assets/f59807b6-a1fb-442e-905c-c4d3f607f080" />
-<img width="2560" height="1948" alt="localhost_5173_(Nest Hub Max) (22)" src="https://github.com/user-attachments/assets/89c7d99d-4b1f-485f-bc67-9771d7dd239f" />
+<img width="2560" height="2884" alt="the-sweet-lab-chocolatee vercel app_(Nest Hub Max)" src="https://github.com/user-attachments/assets/c5f3d49e-a537-4447-9fe7-d8ea281e65ae" />
 
 mobile
 <img width="874" height="2340" alt="Screenshot_20260812_012414_Gallery" src="https://github.com/user-attachments/assets/ffc01fff-5d6d-41ff-99c6-29ec61713f4a" />
