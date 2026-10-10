@@ -29,6 +29,9 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Limite de cards: 6 no mobile, 9 no desktop
+  const limiteCards = isMobile ? 6 : 9;
+
   const filteredProducts = useMemo(() => {
     let list = [...products];
 
@@ -48,7 +51,9 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
     return list;
   }, [search, category, sortBy]);
 
-  const produtosExibidos = mostrarTodos ? filteredProducts : filteredProducts.slice(0, 9);
+  const produtosExibidos = mostrarTodos
+    ? filteredProducts
+    : filteredProducts.slice(0, limiteCards);
 
   return (
     <div
@@ -89,7 +94,7 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
           isMobile={isMobile}
         />
 
-        {!mostrarTodos && filteredProducts.length > 9 && (
+        {!mostrarTodos && filteredProducts.length > limiteCards && (
           <ShowMoreButton onClick={() => setMostrarTodos(true)} isMobile={isMobile} />
         )}
 
