@@ -9,13 +9,13 @@ export default function Footer() {
         marginTop: "40px",
       }}
     >
-      <p>ততততত <strong>E-mail:</strong> contato@sweetlab.com ততততত</p>
+      <p>ত<strong>E-mail:</strong> contato@sweetlab.comত</p>
 
-      <p>ততততত <strong>Telefone:</strong> (21) 3333-3333 ততততত</p>
+      <p>ত<strong>Telefone:</strong> (21) 3333-3333ত</p>
 
-      <p>ততততত <strong>Celular:</strong> (21) 99999-9999 ততততত </p>
+      <p>ত<strong>Celular:</strong> (21) 96423-9143ত </p>
 
-      <p>ততততত <strong>Endereço:</strong> Rua Castro, 123 - Rio de Janeiro/RJ ততততত</p>
+      <p>ত<strong>Endereço:</strong> Rua Castro, 123 - Rio de Janeiro/RJত</p>
     </footer>
   );
 }

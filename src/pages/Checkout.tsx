@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Trash2 } from "lucide-react";
 import { useCart } from "../CartContext";
 import CheckoutHeader from "../components/checkout/CheckoutHeader";
 import CheckoutForm from "../components/checkout/CheckoutForm";
 import SecurePurchase from "../components/checkout/SecurePurchase";
 import CheckoutBenefits from "../components/checkout/CheckoutBenefits";
-import Footer from "../components/home/Footer"; // NOVO
+import Footer from "../components/home/Footer";
 
 interface CheckoutProps {
   onBack: () => void;
@@ -19,12 +20,43 @@ interface FormData {
   complemento: string;
 }
 
-// NOVO: formatador de moeda
 const formatBRL = (value: number) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
+function RemoveButton({ onClick, label }: { onClick: () => void; label: string }) {
+  const [hover, setHover] = useState(false);
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      aria-label={label}
+      title="Remover do carrinho"
+      style={{
+        width: "34px",
+        height: "34px",
+        flexShrink: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: "8px",
+        border: "1px solid #591F24",
+        backgroundColor: hover ? "#591F24" : "transparent",
+        color: hover ? "#F4EBD9" : "#591F24",
+        cursor: "pointer",
+        transition: "background-color 0.2s, color 0.2s, transform 0.1s",
+        transform: hover ? "scale(1.05)" : "scale(1)",
+      }}
+    >
+      <Trash2 size={16} strokeWidth={2} />
+    </button>
+  );
+}
+
 export default function Checkout({ onBack }: CheckoutProps) {
-  const { cart, cartTotal, clearCart } = useCart();
+  const { cart, cartTotal, clearCart, removeFromCart } = useCart();
   const [formData, setFormData] = useState<FormData>({
     nome: "",
     cep: "",
@@ -47,7 +79,6 @@ export default function Checkout({ onBack }: CheckoutProps) {
 
     const numeroWhats = "5521964239143";
 
-    // Mesma lista (cart) usada na tela e na mensagem
     const itensTexto = cart
       .map(
         (item) =>
@@ -55,7 +86,6 @@ export default function Checkout({ onBack }: CheckoutProps) {
       )
       .join("\n");
 
-    // NOVO: dados do cliente na mensagem
     const clienteTexto = [
       `Nome: ${formData.nome}`,
       formData.cep && `CEP: ${formData.cep}`,
@@ -83,7 +113,7 @@ export default function Checkout({ onBack }: CheckoutProps) {
         backgroundColor: "#591F24",
         padding: "40px 20px",
         display: "flex",
-        flexDirection: "column", // NOVO: para o footer ficar abaixo do card
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         fontFamily: "sans-serif",
@@ -110,7 +140,6 @@ export default function Checkout({ onBack }: CheckoutProps) {
             boxShadow: "0 -4px 20px rgba(0,0,0,0.1)",
           }}
         >
-          {/* NOVO: resumo dos produtos do carrinho */}
           <div style={{ marginBottom: "24px" }}>
             <h3 style={{ color: "#591F24", margin: "0 0 12px 0" }}>
               Resumo do pedido
@@ -125,14 +154,14 @@ export default function Checkout({ onBack }: CheckoutProps) {
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
-                    alignItems: "flex-start",
+                    alignItems: "center",
                     gap: "12px",
                     padding: "10px 0",
                     borderBottom: "1px solid #7D3E45",
                     color: "#591F24",
                   }}
                 >
-                  <div>
+                  <div style={{ flex: 1, textAlign: "left" }}>
                     <div style={{ fontWeight: "bold" }}>{item.name}</div>
                     <div style={{ fontSize: "14px" }}>
                       {item.quantity}x {formatBRL(item.price)}
@@ -141,6 +170,10 @@ export default function Checkout({ onBack }: CheckoutProps) {
                   <div style={{ fontWeight: "bold", whiteSpace: "nowrap" }}>
                     {formatBRL(item.price * item.quantity)}
                   </div>
+                  <RemoveButton
+                    onClick={() => removeFromCart(item.id)}
+                    label={`Remover ${item.name} do carrinho`}
+                  />
                 </div>
               ))
             )}
@@ -171,7 +204,6 @@ export default function Checkout({ onBack }: CheckoutProps) {
         <CheckoutBenefits />
       </div>
 
-      {/* NOVO: footer, igual ao da Home */}
       <div style={{ marginTop: "50px", width: "100%", maxWidth: "880px" }}>
         <Footer />
       </div>

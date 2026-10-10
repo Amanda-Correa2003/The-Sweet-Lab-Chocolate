@@ -1,0 +1,31 @@
+.home-page button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+}
+
+.home-page button:not(:disabled):hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3) !important;
+  filter: brightness(1.08);
+}
+
+.home-page button:not(:disabled):active {
+  transform: translateY(0) scale(0.96) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) !important;
+  filter: brightness(0.95);
+}
+
+.home-page button:focus-visible {
+  outline: 2px solid #f4ebd9;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page button {
+    transition: none !important;
+  }
+  .home-page button:not(:disabled):hover,
+  .home-page button:not(:disabled):active {
+    transform: none !important;
+  }
+}

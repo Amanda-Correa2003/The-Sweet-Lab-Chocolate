@@ -6,6 +6,7 @@ import HomeHero from "../components/home/HomeHero";
 import ProductFilters from "../components/home/ProductFilters";
 import ProductGrid from "../components/home/ProductGrid";
 import ShowMoreButton from "../components/home/ShowMoreButton";
+import "../styles/homeButtons.css";
 
 interface HomeProps {
   onIrParaCheckout: () => void;
@@ -37,7 +38,7 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
     if (category !== "Todos") {
       list = list.filter((p) => p.category === category);
     }
-    
+
     switch (sortBy) {
       case "menor-preco": list.sort((a, b) => a.price - b.price); break;
       case "maior-preco": list.sort((a, b) => b.price - a.price); break;
@@ -51,6 +52,7 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
 
   return (
     <div
+      className="home-page"
       style={{
         minHeight: "120vh",
         backgroundColor: "#591F24",
@@ -86,7 +88,7 @@ export default function Home({ onIrParaCheckout }: HomeProps) {
           onAddToCart={addToCart}
           isMobile={isMobile}
         />
-        
+
         {!mostrarTodos && filteredProducts.length > 9 && (
           <ShowMoreButton onClick={() => setMostrarTodos(true)} isMobile={isMobile} />
         )}
